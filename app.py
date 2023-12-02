@@ -5,14 +5,7 @@ import numpy as np
 from PIL import Image
 
 # Load the saved model
-# model = keras.models.load_model('cifar10_model.h5')  
-# Define your custom optimizer class
-class CustomAdam(keras.optimizers.Adam):
-    pass
-
-# Load the saved model with custom optimizer
-model = keras.models.load_model('cifar10_model.h5', custom_objects={'CustomAdam': CustomAdam})
-
+model = keras.models.load_model('cifar10_model.h5')  
 # Class names
 class_names = ['Airplane', 'Automobile', 'Bird', 'Cat', 'Deer', 'Dog', 'Frog', 'Horse', 'Ship', 'Truck']
 
